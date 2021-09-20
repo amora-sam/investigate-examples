@@ -14,7 +14,7 @@ if not token:
 headers = {
   'Authorization': 'Bearer ' + token
 }
-request = Request('https://investigate.api.umbrella.com/domains/categorization/amazon.com', headers=headers)
+request = Request('https://investigate.api.umbrella.com/domains/categorization/internetbadguys.com', headers=headers)
 
 response_body = urlopen(request).read()
 print "domains/categorization: " + response_body
@@ -43,7 +43,7 @@ print "domains/categorization(POST): " + response_body
 headers = {
   'Authorization': 'Bearer ' + token
 }
-request = Request('https://investigate.api.umbrella.com/domains/categorization/amazon.com?showLabels', headers=headers)
+request = Request('https://investigate.api.umbrella.com/domains/categorization/internetbadguys.com?showLabels', headers=headers)
 
 response_body = urlopen(request).read()
 print "domains/categorization?showLabels: " + response_body
@@ -65,7 +65,7 @@ print "domains/categories: " + response_body
 headers = {
   'Authorization': 'Bearer ' + token
 }
-request = Request('https://investigate.api.umbrella.com/domains/score/example.com', headers=headers)
+request = Request('https://investigate.api.umbrella.com/domains/score/internetbadguys.com', headers=headers)
 
 response_body = urlopen(request).read()
 print "domains/score: " + response_body
